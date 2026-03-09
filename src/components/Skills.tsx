@@ -24,6 +24,8 @@ const skillCategories = [
       { name: 'HTML5', icon: Globe },
       { name: 'CSS3', icon: Globe },
       { name: 'Tailwind CSS', icon: Monitor },
+      { name: 'Java', icon: Code },
+      { name: 'Python', icon: Code },
       { name: 'Node.js', icon: Server },
       { name: 'Express.js', icon: Server },
       { name: 'REST APIs', icon: Server },
@@ -38,13 +40,22 @@ const skillCategories = [
     ],
   },
   {
+    key: 'languages',
+    label: 'Languages',
+    icon: Code,
+    skills: [
+      { name: 'JavaScript', icon: Code },
+      { name: 'Java', icon: Code },
+      { name: 'Python', icon: Code },
+    ],
+  },
+  {
     key: 'frontend',
     label: 'Frontend',
     icon: Monitor,
     skills: [
       { name: 'React.js', icon: Monitor },
       { name: 'Next.js', icon: Monitor },
-      { name: 'JavaScript', icon: Code },
       { name: 'HTML5', icon: Globe },
       { name: 'CSS3', icon: Globe },
       { name: 'Tailwind CSS', icon: Monitor },
