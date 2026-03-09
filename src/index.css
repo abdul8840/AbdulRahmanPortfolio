@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+html.dark body {
+  background: #000;
+  color: #fff;
+}
+
+html.light body {
+  background: #f8f8f8;
+  color: #111;
+}
+
+/* Dark mode scrollbar */
+html.dark ::-webkit-scrollbar {
+  width: 6px;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #000;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+html.dark ::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Light mode scrollbar */
+html.light ::-webkit-scrollbar {
+  width: 6px;
+}
+html.light ::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+html.light ::selection {
+  background: rgba(0, 0, 0, 0.15);
+  color: #000;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
