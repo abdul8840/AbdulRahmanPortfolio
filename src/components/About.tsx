@@ -59,7 +59,8 @@ const About = () => {
             <p className={`text-lg leading-relaxed mb-8 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
               Experienced in integrating modern web technologies and implementing technical SEO practices to improve performance and search visibility. Focused on creating optimized, user-friendly applications with clean and maintainable code.
             </p>
-            <motion.a
+            <div className="flex flex-wrap gap-2 justify-start">
+              <motion.a
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
@@ -79,13 +80,14 @@ const About = () => {
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`inline-block ml-2 px-8 py-3 rounded-full font-medium transition-colors ${isDark
+              className={`inline-block px-8 py-3 rounded-full font-medium transition-colors ${isDark
                   ? 'bg-white text-black hover:bg-gray-200'
                   : 'bg-gray-900 text-white hover:bg-gray-800'
                 }`}
             >
               Download CV
             </motion.a>
+            </div>
           </motion.div>
 
           {/* Right - Stats */}

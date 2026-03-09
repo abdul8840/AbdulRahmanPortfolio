@@ -65,7 +65,7 @@ const projectData = [
             "Tailwind CSS",
             "EmailJS",
             "Frontend",
-            "Responsive Design"
+            "Responsive Design",
         ],
 
         category: "freelance",
@@ -123,7 +123,7 @@ const projectData = [
         longDescription:
             "A full stack real estate platform built using the MERN stack and Tailwind CSS. Users can browse properties, add listings, manage accounts, and securely authenticate using JWT. The system includes optimized APIs, responsive UI, and scalable backend architecture.",
         image: "/projects/real-estate.jpg",
-        tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
+        tags: ["React.js", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "Full Stack", "REST API", "Responsive Design"],
         category: "fullstack",
         github: "https://github.com/abdul8840/Mearn-Stack-Real-Estate-Project",
         live: "https://github.com/abdul8840/Mearn-Stack-Real-Estate-Project",
@@ -143,7 +143,7 @@ const projectData = [
         longDescription:
             "Versera is a social writing platform where users can publish stories, like and comment on posts, and explore community content. Built with React and Node.js with MongoDB database and secure authentication.",
         image: "/projects/versera.jpg",
-        tags: ["React", "Node.js", "Express", "MongoDB"],
+        tags: ["React.js", "Node.js", "MongoDB", "JWT", "Full Stack", "REST API", "Responsive Design"],
         category: "fullstack",
         github: "https://github.com/abdul8840/Versera",
         live: "https://github.com/abdul8840/Versera",
@@ -235,7 +235,7 @@ const projectData = [
         image:
             Quadrio,
 
-        tags: ["Node.js", "Express", "MongoDB", "Full Stack"],
+        tags: ["React.js", "Node.js", "MongoDB", "JWT", "Full Stack", "REST API", "Responsive Design"],
 
         category: "fullstack",
 
@@ -372,7 +372,7 @@ const projectData = [
         longDescription:
             "Writer's Club is a social platform where users can publish stories, comment on posts, and interact with other writers. The platform supports content publishing and community engagement.",
         image: WritersClubImg,
-        tags: ["React", "Node.js", "MongoDB"],
+        tags: ["React.js", "Node.js", "MongoDB", "JWT", "Full Stack", "REST API", "Responsive Design", "Admin Dashboard", "Writer's Dashboard"],
         category: "fullstack",
         github: "https://github.com/abdul8840/Writers_club",
         live: "https://writers-club.onrender.com/",
@@ -390,7 +390,7 @@ const projectData = [
         longDescription:
             "Amazon Clone is a modern e-commerce platform replicating core Amazon features such as product listings, cart functionality, and user interface for online shopping.",
         image: AmazoneCloneImg,
-        tags: ["React", "Firebase", "E-commerce"],
+        tags: ["React Native", "Firebase", "E-commerce"],
         category: "mobile",
         github: "https://github.com/abdul8840/AmazonCloneApp",
         live: "https://github.com/abdul8840/AmazonCloneApp",

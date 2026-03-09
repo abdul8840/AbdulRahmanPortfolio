@@ -15,7 +15,7 @@ import { useTheme } from '../context/ThemeContext'
 const skillCategories = [
   {
     key: 'all',
-    label: 'All Skills',
+    label: 'All_Skills',
     icon: Code,
     skills: [
       { name: 'React.js', icon: Monitor },
@@ -126,7 +126,7 @@ const Skills = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="flex flex-wrap justify-center gap-3 mb-14"
+          className="flex flex-nowrap md:flex-wrap justify-start md:justify-center gap-2 mb-8 md:mb-16 overflow-x-auto pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide"
         >
           {skillCategories.map((cat) => (
             <button
@@ -184,6 +184,26 @@ const Skills = () => {
           ))}
         </motion.div>
       </div>
+
+
+      {/* Add custom CSS for scrollbar hiding */}
+      <style jsx>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .line-clamp-1 {
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        .line-clamp-2 {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      `}</style>
     </section>
   )
 }
